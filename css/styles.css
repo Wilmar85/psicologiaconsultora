@@ -355,9 +355,38 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .header {
-    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     grid-column: 2/-1;
     grid-row: 1/2;
+  }
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60vw;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 50px;
+  background-color: gold;
+}
+@media screen and (min-width: 1024px) {
+  .topbar {
+    height: 60px;
+    left: 100%;
+    width: 20vw;
+    justify-content: space-between;
+    transform: translate(-100%);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .topbar {
+    width: 15vw;
   }
 }
 
