@@ -371,10 +371,10 @@ body {
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   height: 40px;
-  background-color: #333;
-  padding-left: 20%;
+  background-color: #666;
+  padding-left: 60px;
 }
 .topbar__icon {
   width: 90px;
@@ -386,8 +386,8 @@ body {
     height: 60px;
     left: 100%;
     width: 20vw;
-    justify-content: space-between;
-    transform: translate(-100%);
+    justify-content: space-evenly;
+    transform: translateX(-100%);
   }
 }
 @media screen and (min-width: 1400px) {
@@ -403,10 +403,10 @@ body {
 }
 
 .logo {
-  height: 40px;
+  width: 50px;
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
   top: -0.1rem;
   z-index: 10;
